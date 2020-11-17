@@ -1,1 +1,8 @@
 /* to do - darkmode */
+
+.whitespace {
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    background-color: #ffffff;
+}

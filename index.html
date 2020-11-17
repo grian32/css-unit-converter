@@ -7,12 +7,36 @@
         <meta name = "description" content = "Converts any amounts of pixels to all other units for CSS golfing">
         <link rel = "icon" href = "favicon.png">
         <link  href = "css/main.css" rel = "stylesheet" type = "text/css"/>
-        <script src = "ts/main.js" defer></script>
+        <script src = "ts/dist/main.js" defer></script>
     </head>
 
     
     <body>
-        <input type = "button" value = "test calcAbsolute" onclick = "console.log(calcAbsolute(200));">
-        <input type = "button" value = "test calcRelative" onclick = "console.log(calcRelative(200));">
+        <input type = "text" id = "input_px" value = "">
+        <p>Please input your px value in the textbox above</p>
+        <input type = "button" value = "Calculate!" onclick = "displayResults();"><br>
+        <div class = "whitespace"></div><br>
+
+
+        <!-- absolute values -->
+        
+        <code id = "output_cm"> CM: </code><br>
+        <div class = "whitespace"></div><br>
+        <code id = "output_mm"> MM: </code><br>
+        <div class = "whitespace"></div><br>
+        <code id = "output_Q"> Q: </code><br>
+        <div class = "whitespace"></div><br>
+        <code id = "output_inch"> INCH: </code><br>
+        <div class = "whitespace"></div><br>
+        <code id = "output_pc"> CM: </code><br>
+        <div class = "whitespace"></div><br>
+        <code id = "output_pt"> CM: </code><br>
+        <div class = "whitespace"></div><br>
+
+        <!-- relative values -->
+
+        <code id = "output_vw"> VW: </code><br>
+        <div class = "whitespace"></div><br>
+        <!-- todo legend and info -->
     </body>
 </html>
