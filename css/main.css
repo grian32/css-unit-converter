@@ -35,4 +35,98 @@ body {
     background-color: var(--input-background);
     border: transparent;
     outline: transparent;
+    cursor: pointer;
+}
+
+#decimal_places {
+    width: 10%;
+}
+/* generated with range.css. see http://danielstern.ca/range.css/#/ */
+input[type=range].range {
+    width: 100%;
+    margin: 6.3px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+input[type=range].range:focus {
+    outline: none;
+}
+input[type=range].range::-webkit-slider-runnable-track {
+    background: #cfcdcd;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+}
+input[type=range].range::-webkit-slider-thumb {
+    margin-top: -6.5px;
+    width: 14px;
+    height: 21px;
+    background: #ffffff;
+    border: 1.7px solid #000000;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+input[type=range].range:focus::-webkit-slider-runnable-track {
+    background: #dbdada;
+}
+input[type=range].range::-moz-range-track {
+    background: #cfcdcd;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+}
+input[type=range].range::-moz-range-thumb {
+    width: 14px;
+    height: 21px;
+    background: #ffffff;
+    border: 1.7px solid #000000;
+    border-radius: 2px;
+    cursor: pointer;
+}
+input[type=range].range::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 7.3px 0;
+    color: transparent;
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+}
+input[type=range].range::-ms-fill-lower {
+    background: #c3c0c0;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+}
+input[type=range].range::-ms-fill-upper {
+    background: #cfcdcd;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+}
+input[type=range].range::-ms-thumb {
+    width: 14px;
+    height: 21px;
+    background: #ffffff;
+    border: 1.7px solid #000000;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+}
+input[type=range].range:focus::-ms-fill-lower {
+    background: #cfcdcd;
+}
+input[type=range].range:focus::-ms-fill-upper {
+    background: #dbdada;
+}
+@supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range].range {
+        margin: 0;
+        /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
 }
