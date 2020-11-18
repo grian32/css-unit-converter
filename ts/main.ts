@@ -49,5 +49,5 @@ function displayResults() {
 
     // assign to variables and display relative values
     var vw = document.getElementById("output_vw");
-    vw.innerHTML = `VW: ${resultRelative}`
+    vw.innerHTML = `VIEWPORT: ${resultRelative}`
 }
