@@ -1,7 +1,5 @@
 # css-unit-converter
-<!--TODO Add Logo Here-->
-<!--TODO Add link here-->
-**BIG VERY IMPORTANT HERE: This is in an unfinished state and has yet to be published on GH Pages**
+[Link.](https://grian32.github.io/css-unit-converter/)
 ## What is this
    - It's a site that converts pixels to other CSS units.
 ## Why does this exist
