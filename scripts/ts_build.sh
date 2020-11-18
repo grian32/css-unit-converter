@@ -1,5 +1,5 @@
 #!/bin/bash
-# runs tsc on main.ts
+# runs tsc on any file inputted that is in ts/
 
 project_dir="$(dirname $(dirname $(realpath $0)))"
 
