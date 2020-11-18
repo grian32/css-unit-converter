@@ -1,8 +1,38 @@
-/* to do - darkmode */
+
+/* general */
+:root {
+    --background: rgb(37, 37, 37);
+    --text-color: rgb(207, 205, 205);
+    --input-background: rgb(59, 59, 59);
+}
 
 .whitespace {
     display: inline-block;
     width: auto;
     height: 20px;
-    background-color: #ffffff;
+    background-color: var(--background);
+}
+
+*{
+    font-family: "Jetbrains Mono", monospace;
+    text-align: center;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* input tag stuff */
+
+#input_px {
+    background-color: var(--input-background);
+    border: transparent;
+    outline: transparent;
+}
+
+#calc {
+    background-color: var(--input-background);
+    border: transparent;
+    outline: transparent;
 }
