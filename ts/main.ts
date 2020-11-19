@@ -14,6 +14,12 @@ function calcAbsolute(px: number) {
     values["inch"] = values["cm"] * 2.54;
     values["pc"] = values["inch"] / 6;
     values["pt"] = values["inch"] / 72;
+    
+    // strip extra decimals
+    for(const property in values) {
+        values[property] = values[property].toFixed(decimalPlaces); // we don't need to cast back to number since we are displaying as a string
+    }
+
     return values;
 }
 
@@ -50,4 +56,16 @@ function displayResults() {
     // assign to variables and display relative values
     var vw = document.getElementById("output_vw");
     vw.innerHTML = `VIEWPORT: ${resultRelative}`
+}
+
+var range = <HTMLInputElement>document.getElementById("decimal_places");
+var numOfPlaces = document.getElementById("num_of_places");
+var decimalPlaces: number;
+
+// set to default values
+setDecimalPlaces();
+
+function setDecimalPlaces() {
+    decimalPlaces = Number(range.value);
+    numOfPlaces.textContent = range.value;
 }
